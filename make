@@ -11,7 +11,7 @@ if [ "$1" = "install" ]; then
   EXECUTABLE=".build/release/$BIN_NAME"
   if [ -f "$EXECUTABLE" ]; then
     echo "Coping xcvdetector to the $BIN_PATH"
-    #cp "$EXECUTABLE" "$BIN_PATH/$BIN_NAME"
+    cp "$EXECUTABLE" "$BIN_PATH/$BIN_NAME"
     echo "Done! Restart terminal or open new and use $BIN_NAME"
   else
     ls .build/release
